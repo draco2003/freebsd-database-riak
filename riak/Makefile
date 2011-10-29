@@ -16,7 +16,7 @@ COMMENT=        Highly scalable, fault-tolerant distributed database.
 USE_GMAKE=     yes
 #USE_RC_SUBR=    riak	
 
-RUN_DEPENDS+=   bash:${PORTSDIR}/shells/bash
+BUILD_DEPENDS+=   erlang:${PORTSDIR}/lang/erlang 
 
 PLIST_FILES=	bin/riak\
 		bin/riak-admin \
